@@ -60,10 +60,6 @@ shading interp
     axis([-130, 130, -130, 130, -30, 130]);
     axis off;
     
-    % Maybe change the view using the view() function.  **NOTE** This may
-    % need to be changed to view your animation.  If you don't understand,
-    % type "help view" (without the quotes) for more information.
-    
     view(-170,20);
     
     [xxC yyC zzC] = rotateAxis(xxC,yyC,zzC,-th,'z');
@@ -79,23 +75,6 @@ shading interp
     hold off
 end
 
-% If you do not fill this section out with DETAILED EXPLANATIONS of what
-% your creative changes are, you will not receive any extra credit.
-
-% Creative changes I made to the assignment include: 
-    %Added a blue background, to make the animation look more sky/sea-like.
-        %function used was whitebg()
-    %Added a humorous title on the top of the plot.
-    %Added a long mast to the ship, directly perpendicular to the ship.
-    %Added a rock to the animation to make it look like the ship is moving
-    %around the rock.
-        % Function used to create the rock is a helper function inside pirateShip.m,
-        % called Rock() (included after the comments. It doesn't take in an input,
-        % but outputs the x,y,and z mesh-coordinates.
-    %Added shading and a steel-like color look to the animated objects and the rock
-    %using the following code:
-            %colormap bone;
-            %shading interp;
 end
 
 
